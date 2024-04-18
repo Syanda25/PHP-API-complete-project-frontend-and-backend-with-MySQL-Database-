@@ -87,10 +87,10 @@
 
         $name = mysqli_real_escape_string($conn, $inputedData["name"]);
         $email = mysqli_real_escape_string($conn, $inputedData["email"]);
-        $password = mysqli_real_escape_string($conn, $inputedData["password"]);
+        $surname = mysqli_real_escape_string($conn, $inputedData["surname"]);
 
-        $query = "INSERT INTO user(name, email, password)
-                  VALUES ('$name', '$email', '$password')";
+        $query = "INSERT INTO user(name, email, surname)
+                  VALUES ('$name', '$email', '$surname')";
         $query_run = mysqli_query($conn, $query);
 
         if($query_run){
@@ -171,7 +171,7 @@
         $updt_email = mysqli_real_escape_string($conn, $updt_email["email"]);
         $name = mysqli_real_escape_string($conn, $inputData["name"]);
         $email = mysqli_real_escape_string($conn, $inputData["email"]);
-        $password = mysqli_real_escape_string($conn, $inputData["password"]);
+        $surname = mysqli_real_escape_string($conn, $inputData["surname"]);
 
         if($updt_email == null){
             $data = [
@@ -180,7 +180,7 @@
             ];
         }
         $query = "UPDATE user 
-                  SET name='$name', email='$email', password='$password'
+                  SET name='$name', email='$email', password='$surname'
                   WHERE email='$updt_email'";
         $query_run = mysqli_query($conn, $query);
 

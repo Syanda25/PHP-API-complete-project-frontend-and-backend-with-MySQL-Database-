@@ -67,7 +67,7 @@ include ('main.php');
 
         $data = [
             "name"=>$name,
-            "password" => $surname,
+            "surname" => $surname,
             "email" => $email
         ];
 
@@ -111,7 +111,7 @@ include ('main.php');
 
         $data = [
             "name"=>$name,
-            "password" => $surname,
+            "surname" => $surname,
             "email" => $email
         ];
 
