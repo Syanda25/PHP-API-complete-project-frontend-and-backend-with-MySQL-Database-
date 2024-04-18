@@ -180,7 +180,7 @@
             ];
         }
         $query = "UPDATE user 
-                  SET name='$name', email='$email', password='$surname'
+                  SET name='$name', email='$email', surname='$surname'
                   WHERE email='$updt_email'";
         $query_run = mysqli_query($conn, $query);
 
