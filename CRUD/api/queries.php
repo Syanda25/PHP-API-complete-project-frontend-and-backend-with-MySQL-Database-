@@ -87,7 +87,10 @@
 
         $name = mysqli_real_escape_string($conn, $inputedData["name"]);
         $email = mysqli_real_escape_string($conn, $inputedData["email"]);
+<<<<<<< HEAD:CRUD/api/queries.php
         
+=======
+>>>>>>> 2e36f2a638a39b02906b9e5c92be6dbb4f02decf:project/api/queries.php
         $surname = mysqli_real_escape_string($conn, $inputedData["surname"]);
 
         $query = "INSERT INTO user(name, email, surname)
